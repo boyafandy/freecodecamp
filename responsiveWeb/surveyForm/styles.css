@@ -1,0 +1,76 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 650px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+label {
+  display: block;
+  margin: 5px 0 10px 0;
+  font-weight: bold;
+}
+
+fieldset {
+  padding: 20px;
+}
+
+input, select, textarea{
+  display: block;
+  margin: 5px 0 15px 0;
+  width: 100%;
+  padding: 11px;
+}
+
+select {
+  border: none;
+}
+
+input[type="checkbox"], input[type="radio"]  {
+  width: unset;
+  margin: 0 10px 0 0;
+}
+
+.inline {
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: middle;
+  font-weight: normal;
+
+}
+
+input.inline{
+  margin-right: 5px;
+}
+
+#dropdown-label{
+  margin-top: 2rem;
+}
+
+input[type="submit"]{
+  display: block;
+  width: 20%;
+  margin: 2em auto 0 auto;
+  font-size: 1.1rem;
+  border-color: white;
+  min-width: 300px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#tambahan {
+  margin-top: 20px;
+}

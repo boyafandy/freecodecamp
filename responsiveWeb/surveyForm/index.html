@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survei Pengaruh Obat</h1>
+  <p id="description">Harap mengisi survei ini dengan benar dan sesuai dengan kondisi anda.</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Nama: <input type="text" name="name" id="name" required placeholder="nama"></label>
+      <label id="email-label" for="email">Email: <input type="email" name="email" id="email" required placeholder="email"></label>
+      <label id="number-label" for="number">Umur: <input type="number" name="umur" id="number" min="6" max="50" required placeholder="umur"></label>
+    
+      <label for="dropdown" id="dropdown-label"> Obat yang digunakan
+        <select name="obat" id="dropdown">
+          <option value="">-- obat yang anda gunakan --</option>
+            <option value="A">Obat A</option>
+            <option value="B">Obat B</option>
+            <option value="C">Obat C</option>
+        </select>
+      </label>
+
+      <label id="efek-obat" for="efek-obat">Lama pemakaian obat</label>
+      <label class="inline" for="1"><input type="radio" name="penggunaan" id="1" value="1" class="inline">1 hari</label>
+      <label class="inline" for="3"><input type="radio" name="penggunaan" id="3" value="3" class="inline">3 hari</label>
+      <label class="inline" for="7"><input type="radio" name="penggunaan" id="7" value="7" class="inline">7 hari</label>
+      <label class="inline" for="999"><input type="radio" name="penggunaan" id="999" value="999" class="inline">lebih dari 7 hari</label>
+
+      
+      <label id="efek-obat" for="efek-obat">Efek obat</label>
+      <label class="inline" for="mual"><input type="checkbox" name="efek-obat" id="mual" value="mual"  class="inline">Mual</label>
+      <label class="inline" for="pusing"><input type="checkbox" name="efek-obat" id="pusing" value="pusing"  class="inline">Pusing</label>
+      <label class="inline" for="demam"><input type="checkbox" name="efek-obat" id="demam" value="demam"  class="inline">Demam</label>
+
+      
+      <label for="tambahan" id="tambahan"> Tambahan:
+        <textarea name="tambahan" cols="10" rows="2"></textarea>
+      </label>
+      <input type="submit" id="submit" value="submit">
+    </fieldset>
+  </form>
+
+</body>
+</html>
