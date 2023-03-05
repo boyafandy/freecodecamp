@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  max-width: 500px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.quote_text {
+  text-align: center;
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  z-index: 0;
+  font-size: 80px;
+  color: #99999940;
+  
+}
+
+#text {
+  z-index: 1;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#author {
+  width: 100%;
+  text-align: right;
+  font-weight:lighter;
+  font-size: 20px;  
+  margin: 20px 0;
+}
+
+#author::before {
+  content: "-";
+  margin-right: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tweet-quote, #new-quote {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+
+button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+}
